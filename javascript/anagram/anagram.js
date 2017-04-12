@@ -1,21 +1,16 @@
 Anagram = function(arg){
-  this.word = arg.toLowerCase().split('').sort().join('');
+    this.arg = arg.toLowerCase();
+    this.word = arg.toLowerCase().split('').sort().join('');
 }
 
-Anagram.prototype.matches = function(arr){
-  if(Array.isArray(arr)){
-    return arr.filter((elem) => {
-        var test = elem.toLowerCase().split('').sort().join('');
-        return this.word === test;
+Anagram.prototype.matches = function(thing){
+    let arr = Array.isArray(thing) ? thing : [thing];
+    return arr.filter((ele) => {
+        let toTest = ele.toLowerCase();
+        if(toTest !== this.arg){
+            return this.word === toTest.split('').sort().join('');        
+        }
     });
-  } else {
-      var test = arr.toLowerCase().split('').sort().join('');
-      if(this.word === test){
-          return [arr];
-      } else {
-          return [];
-      }
-  }
 }
 
 module.exports = Anagram;
