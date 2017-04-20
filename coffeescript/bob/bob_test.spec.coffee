@@ -13,15 +13,15 @@ describe "Bob", ->
     result = bob.hey "Does this cryogenic chamber make me look fat?"
     expect(result).toEqual "Sure."
 
-  xit "talking forcefully", ->
+  it "talking forcefully", ->
     result = bob.hey "Let's go make out behind the gym!"
     expect(result).toEqual "Whatever."
 
-  xit "using acronyms in regular speech", ->
+  it "using acronyms in regular speech", ->
     result = bob.hey "It's OK if you don't want to go to the DMV."
     expect(result).toEqual "Whatever."
 
-  xit "forceful questions", ->
+  it "forceful questions", ->
     result = bob.hey "WHAT THE HELL WERE YOU THINKING?"
     expect(result).toEqual "Whoa, chill out!"
 

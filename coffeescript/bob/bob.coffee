@@ -1,16 +1,30 @@
 class Bob
     hey: (arg) ->
         if arg?
-            if arg[arg.length-1] == '!'
-               "Whoa, chill out!"
+            # shouting
+            if arg.toUpperCase() == arg
+                "Whoa, chill out!"
+
+            # questions
             else if arg[arg.length-1] == '?'
-                "Sure."
+                "Sure."            
+
+            #talking forcefully
+            else if arg[arg.length-1] == '!'
+                @_whatever()
+
+            # forceful questions
+            else if arg[arg.length-1] == '?' and arg.toUpperCase() == arg
+                "Whoa, chill out!"
+
+            # anything else
             else
                 @_whatever()
     
     _whatever: () ->
-        # console.log "whatever is called"
         "Whatever."
+
+    # consider internal methods for testing all caps and testing last char
 
 module.exports = Bob
 
