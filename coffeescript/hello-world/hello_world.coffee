@@ -6,3 +6,5 @@ class HelloWorld
             "Hello, World!"
 
 module.exports = HelloWorld;
+
+# add a meaningless change
