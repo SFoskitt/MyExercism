@@ -22,7 +22,11 @@ describe "Words", ->
       red: 1
       blue: 1
 
+<<<<<<< HEAD
   xit "ignores punctuation", ->
+=======
+  it "ignores punctuation", ->
+>>>>>>> 51c69f201f9e9ce93ea586c2016a7ab3e98fb223
     words = new Words "car : carpet as java : javascript!!&@$%^&"
     expect(words.count()).toEqual
       car: 1
@@ -31,14 +35,22 @@ describe "Words", ->
       java: 1
       javascript: 1
 
+<<<<<<< HEAD
   xit "includes numbers", ->
+=======
+  it "includes numbers", ->
+>>>>>>> 51c69f201f9e9ce93ea586c2016a7ab3e98fb223
     words = new Words "testing, 1, 2 testing"
     expect(words.count()).toEqual
       testing: 2
       1: 1
       2: 1
 
+<<<<<<< HEAD
   xit "normalizes case", ->
+=======
+  it "normalizes case", ->
+>>>>>>> 51c69f201f9e9ce93ea586c2016a7ab3e98fb223
     words = new Words "go Go GO"
     expect(words.count()).toEqual
       go: 3
