@@ -1,7 +1,7 @@
 class HelloWorld 
     hello: (arg) ->
         if arg?
-            "Hello, " + arg + "!"
+            "Hello, there " + arg + "!"
         else
             "Hello, World!"
 
