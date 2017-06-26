@@ -1,8 +1,3 @@
-#
-# Skeleton file for the Python "Hello World" exercise.
-#
-
-
 def hello(name=''):
     print 'My Name Is ', name
     if name == '' or name == None:
