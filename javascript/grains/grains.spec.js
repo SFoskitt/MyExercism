@@ -32,7 +32,11 @@ var Grains = require('./grains');
 describe('Grains', function () {
   var grains = new Grains();
 
+<<<<<<< HEAD
   xit('square 1', function () {
+=======
+  it('square 1', function () {
+>>>>>>> 1958e0f82b1f382b9eaf5bf09b96ae0395b1e87b
     expect(grains.square(1)).toBe('1');
   });
 
@@ -60,7 +64,11 @@ describe('Grains', function () {
     expect(grains.square(64)).toBe('9223372036854775808');
   });
 
+<<<<<<< HEAD
   it('total', function () {
+=======
+  xit('total', function () {
+>>>>>>> 1958e0f82b1f382b9eaf5bf09b96ae0395b1e87b
     expect(grains.total()).toBe('18446744073709551615');
   });
 });
