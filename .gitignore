@@ -23,3 +23,10 @@ java/two-fer/build/*
 java/two-fer/.classpath
 java/two-fer/.project
 java/two-fer/build.gradle
+java/rna-transcription/.gradle/*
+java/rna-transcription/.settings/*
+java/rna-transcription/build/*
+java/rna-transcription/.classpath
+java/rna-transcription/.project
+java/rna-transcription/build.gradle
+java/rna-transcription/README.md
