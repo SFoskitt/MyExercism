@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ResistorColorDuoTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-12-02T01:34:20" hostname="Shenanigans" time="0.077">
+  <properties/>
+  <testcase name="testBrownAndBlack" classname="ResistorColorDuoTest" time="0.07"/>
+  <testcase name="testBlueAndGrey" classname="ResistorColorDuoTest" time="0.002"/>
+  <testcase name="testOrangeAndOrange" classname="ResistorColorDuoTest" time="0.002"/>
+  <testcase name="testYellowAndViolet" classname="ResistorColorDuoTest" time="0.001"/>
+  <testcase name="testIgnoreAdditionalColors" classname="ResistorColorDuoTest" time="0.001"/>
+  <system-out><![CDATA[Hello world!
+colors[i]: brown
+colors[i]: black
+num: 10
+Hello world!
+brown black: 10
+Hello world!
+colors[i]: blue
+colors[i]: grey
+num: 68
+blue grey: 68
+Hello world!
+colors[i]: orange
+colors[i]: orange
+num: 33
+orange orange: 33
+Hello world!
+colors[i]: yellow
+colors[i]: violet
+num: 47
+yellow violet: 47
+Hello world!
+colors[i]: green
+colors[i]: brown
+num: 51
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
