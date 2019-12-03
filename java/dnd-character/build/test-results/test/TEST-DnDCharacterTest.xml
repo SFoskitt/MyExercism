@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DnDCharacterTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-12-03T18:45:53" hostname="sfoskitt1271" time="0.012">
+<testsuite name="DnDCharacterTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2019-12-03T19:17:53" hostname="sfoskitt1271" time="0.012">
   <properties/>
   <testcase name="testAbilityModifierForScore3IsNegative4" classname="DnDCharacterTest" time="0.001"/>
   <testcase name="testAbilityModifierForScore4IsNegative3" classname="DnDCharacterTest" time="0.0"/>
-  <testcase name="testRandomAbilityIsWithinRange" classname="DnDCharacterTest" time="0.001"/>
+  <testcase name="testRandomAbilityIsWithinRange" classname="DnDCharacterTest" time="0.0"/>
   <testcase name="testAbilityModifierForScore5IsNegative3" classname="DnDCharacterTest" time="0.0"/>
   <testcase name="testAbilityModifierForScore10Is0" classname="DnDCharacterTest" time="0.0"/>
   <testcase name="testAbilityModifierForScore11Is0" classname="DnDCharacterTest" time="0.0"/>
