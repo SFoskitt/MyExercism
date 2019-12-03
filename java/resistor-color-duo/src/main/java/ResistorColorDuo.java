@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 class ResistorColorDuo {
     int value(String[] colors) {
-        System.out.println("Hello world!");
         String num = "";
     
         for (int i = 0; i < 2; i++) {
