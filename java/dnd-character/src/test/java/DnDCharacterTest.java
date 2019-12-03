@@ -107,9 +107,17 @@ public class DnDCharacterTest {
         }
     }
 
+    /**
+     * Added all of the attributes to be tested, not just the one provided.
+     */
     @Test
     public void testEachAbilityIsOnlyCalculatedOnce() {
         assertEquals(dndCharacter.getStrength(), dndCharacter.getStrength());
+        assertEquals(dndCharacter.getDexterity(), dndCharacter.getDexterity());
+        assertEquals(dndCharacter.getConstitution(), dndCharacter.getConstitution());
+        assertEquals(dndCharacter.getIntelligence(), dndCharacter.getIntelligence());
+        assertEquals(dndCharacter.getWisdom(), dndCharacter.getWisdom());
+        assertEquals(dndCharacter.getCharisma(), dndCharacter.getCharisma());
     }
 
 }

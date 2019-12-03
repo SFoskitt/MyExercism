@@ -1,39 +1,74 @@
+import java.util.Random;
+import java.util.Arrays;
+
 class DnDCharacter {
 
+    // Initialize values
+    int ability = getScore();
+    int charisma = getScore();
+    int constitution = getScore();
+    int dexterity = getScore();
+    int intelligence = getScore();
+    int strength = getScore();
+    int wisdom = getScore();
+
     int ability() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.ability;
     }
 
     int modifier(int input) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        double val = Math.floor((double)(input - 10) / (double)(2));
+        return (int)Math.round(val);
     }
 
     int getStrength() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.strength;
     }
 
     int getDexterity() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.dexterity;
     }
 
     int getConstitution() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.constitution;
     }
 
     int getIntelligence() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.intelligence;
     }
 
     int getWisdom() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.wisdom;
     }
 
     int getCharisma() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return this.charisma;
     }
 
     int getHitpoints() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return (10 + modifier(getConstitution()));
+    }
+
+    /**
+     * Modified from https://stackoverflow.com/questions/12860398/basic-random-rolling-dice-java
+     */
+    int[] roll4d6() {
+        int rolls[] = new int[4];
+        Random  r = new Random(); 
+        for (int i = 0; i < 4; i++) {
+            rolls[i] = r.nextInt(6) + 1;
+        }
+        return rolls;  
+    }
+
+    int getScore() {
+        int[] nums = roll4d6();
+        Arrays.sort(nums);
+        int result = 0;
+        for (int i = 1; i < nums.length; i++) {
+            result += nums[i];
+        }
+        return result;
     }
 
 }
