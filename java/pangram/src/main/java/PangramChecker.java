@@ -2,11 +2,13 @@ public class PangramChecker {
 
     public boolean isPangram(String input) {
         String alpha = "abcdefghijklmnopqrstuvwxyz";
-        String processStr = input.toLowerCase();
-        char[] processArr = input.toCharArray();
+        input = input.toLowerCase();
 
-
-        return false;
+        for (int i = 0; i < input.length(); i++) {
+            String tmp = String.valueOf(input.charAt(i));
+            alpha = alpha.replace(tmp, "");
+        }
+        return alpha.length() == 0;
     }
 
 }
