@@ -1,12 +1,7 @@
 public class PangramChecker {
 
     public boolean isPangram(String input) {
-        String alpha = "abcdefghijklmnopqrstuvwxyz";
-        String processStr = input.toLowerCase();
-        char[] processArr = input.toCharArray();
-
-
-        return false;
+        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
 
 }

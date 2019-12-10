@@ -30,3 +30,11 @@ java/rna-transcription/.classpath
 java/rna-transcription/.project
 java/rna-transcription/build.gradle
 java/rna-transcription/README.md
+java/darts/.classpath
+java/darts/.project
+java/dnd-character/.classpath
+java/dnd-character/.project
+java/resistor-color-duo/.classpath
+java/resistor-color-duo/.project
+java/resistor-color/.classpath
+java/resistor-color/.project
