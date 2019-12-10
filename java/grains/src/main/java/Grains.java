@@ -13,12 +13,16 @@ class Grains {
 
     BigInteger grainsOnBoard() {
         // 18446744073709551615
-        BigInteger boardGrains =  grainsOnSquare(64);
-        System.out.println("boardGrains: " + boardGrains);
-        System.out.println("expected: 18446744073709551615");
-        BigInteger boardGrainsDoubled = boardGrains.multiply(BigInteger.valueOf(2));
-        System.out.println("doubled: " + boardGrainsDoubled);
-        return boardGrainsDoubled;
+        // BigInteger boardGrains =  grainsOnSquare(64);
+        // System.out.println("boardGrains: " + boardGrains);
+        // System.out.println("expected: 18446744073709551615");
+        // BigInteger boardGrainsDoubled = boardGrains.multiply(BigInteger.valueOf(2));
+        // System.out.println("doubled: " + boardGrainsDoubled);
+        // return boardGrainsDoubled;
+    	BigInteger result = new BigInteger("2").pow(64);
+    	result = result.subtract(new BigInteger("1"));
+    	return result;
+
     }
 
 }
