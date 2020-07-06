@@ -1,25 +1,0 @@
-Hello world!
-colors[i]: brown
-colors[i]: black
-num: 10
-Hello world!
-brown black: 10
-Hello world!
-colors[i]: blue
-colors[i]: grey
-num: 68
-blue grey: 68
-Hello world!
-colors[i]: orange
-colors[i]: orange
-num: 33
-orange orange: 33
-Hello world!
-colors[i]: yellow
-colors[i]: violet
-num: 47
-yellow violet: 47
-Hello world!
-colors[i]: green
-colors[i]: brown
-num: 51

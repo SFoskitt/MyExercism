@@ -1,0 +1,24 @@
+# Root folder
+.vscode
+.gradle
+../.gradle/
+*.class 
+
+# Per exercise
+*.bin
+.gradle
+/build/
+.classpath
+.project
+.settings
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+### Gradle ###
+
+
+
+
