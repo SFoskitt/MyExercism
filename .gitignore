@@ -1,3 +1,7 @@
+.solution.json
+node_modules/
+*.lock
+
 exercism
 java/hello-world/.gradle/*
 java/hello-world/.settings/*
@@ -38,3 +42,11 @@ java/resistor-color-duo/.classpath
 java/resistor-color-duo/.project
 java/resistor-color/.classpath
 java/resistor-color/.project
+
+# 2020-07-13, these were modified before I started tracking with Git
+.exercism.exe.old
+exercism.exe
+javascript/leap/HINT.md
+javascript/simple-cipher/
+typescript/armstrong-numbers/
+typescript/simple-cipher/
