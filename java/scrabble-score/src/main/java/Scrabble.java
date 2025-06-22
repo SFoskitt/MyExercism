@@ -1,48 +1,50 @@
-import java.util.*;
-import java.io.*;
+import static java.util.Map.entry;
+import java.util.Map;
 
 class Scrabble {
-
-    private int score = 0;
-    HashMap<String, Integer> scoreMap = new HashMap<>();
+    private Map<String, Integer> dict;
 
     Scrabble(String word) {
-        scoreMap.put("a", 1);
-        scoreMap.put("b", 3);
-        scoreMap.put("c", 3);
-        scoreMap.put("d", 2);
-        scoreMap.put("e", 1);
-        scoreMap.put("f", 4);
-        scoreMap.put("g", 2);
-        scoreMap.put("h", 4);
-        scoreMap.put("i", 1);
-        scoreMap.put("j", 8);
-        scoreMap.put("k", 5);
-        scoreMap.put("l", 1);
-        scoreMap.put("m", 3);
-        scoreMap.put("n", 1);
-        scoreMap.put("o", 1);
-        scoreMap.put("p", 3);
-        scoreMap.put("q", 10);
-        scoreMap.put("r", 1);
-        scoreMap.put("s", 1);
-        scoreMap.put("t", 1);
-        scoreMap.put("u", 1);
-        scoreMap.put("v", 4);
-        scoreMap.put("w", 4);
-        scoreMap.put("x", 8);
-        scoreMap.put("y", 4);
-        scoreMap.put("z", 10);
+        dict = Map.ofEntries(
+            entry("a", 1),
+            entry("b", 3),
+            entry("c", 3),
+            entry("d", 2),
+            entry("e", 1),
+            entry("f", 4),
+            entry("g", 2), 
+            entry("h", 4),
+            entry("i", 1),
+            entry("j", 8),
+            entry("k", 5),
+            entry("l", 1),
+            entry("m", 3),
+            entry("n", 1),
+            entry("o", 1),
+            entry("p", 3),
+            entry("q", 10),
+            entry("r", 1),
+            entry("s", 1),
+            entry("t", 1),
+            entry("u", 1),
+            entry("v", 4),
+            entry("w", 4),
+            entry("x", 8),
+            entry("y", 4),
+            entry("z", 10)                                
+        );
 
-        String[] chars = word.split("");
-        if(chars.length > 0) {
-            for(String thisChar : chars) {
-                this.score += this.scoreMap.get(thisChar.toLowerCase());
-            }
+        getScore(word);
+    }
+
+    int getScore(String word) {
+        // String wordLower = word.toLowerCase();
+        String[] wordSplit = word.toLowerCase().split("");
+        Integer finalScore = 0;
+        for(String c : wordSplit) {
+            finalScore += dict.get(c);
         }
+        return finalScore;
     }
 
-    int getScore() {
-        return this.score;
-    }
 }
